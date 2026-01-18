@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: "Fira Sans", sans-serif;
+    background-color: #F5F5F5;
+    
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+   padding-top: 31px;
+   padding-bottom: 31px;
+}
+
+nav h1 a{
+    font-size: 2rem;
+    color: #0E0E0E;
+    font-weight: bold;
+}
+
+button{
+    font-size: 1.12rem;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.btn{
+    color: #006A50;
+    font-weight: 600;
+    border: 1px solid #006A50;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+@media screen  and (max-width: 400px){
+    nav{
+        padding: 20px;
+    }
+
+    nav h1 a{
+    font-size: 1.5rem;
+    
+}
+
+nav button{
+    font-size: 0.8rem;
+    
+    
+}
+
+.btn{
+   
+    font-weight: 600;
+    
+    padding: 8px 18px;
+    
+}
+    
+}
+
+
+
+/* Main section */
+
+main{
+    background-color: #C6E4D6;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 60px 65px;
+    gap: 64px;
+    border-radius: 24px;
+    margin-bottom: 80px;
+}
+
+main .right_main img{
+    
+    width: 470px;
+    
+}
+
+main .left_main p{
+    font-size: 1.5rem;
+    color: #0E0E0E;
+    margin-bottom: 16px;
+}
+
+main .left_main h2{
+    font-size: 3.5rem;
+    color: #0E0E0E;
+}
+
+.green_button{
+    font-size: 1.12rem;
+    color: #fff;
+    font-weight: 600;
+    background-color: #006A50;
+    padding: 17px 34px;
+    display: inline-block;
+    border-radius: 8px;
+    
+}
+
+main .left_main button a{
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 400px) {
+    main{
+        padding: 30px;
+        flex-direction: column;
+        border-radius: 0;
+        margin-bottom: 40px;
+    }
+
+    main .left_main p{
+        font-size: .9rem;
+    }
+
+    main .left_main h2{
+        font-size: 1.8rem;
+    }
+
+    .green_button{
+        font-size: 1rem;
+        padding: 10px 16px;
+    }
+
+    main .right_main img{
+    
+    width: 100%;
+    
+}
+    
+}
+
+
+/* Pillars of bangladesh section */
+
+.pillars h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0E0E0E;
+    margin-bottom: 32px;
+}
+.pillars .card_container{
+    display: flex;
+    gap: 24px;
+}
+.pillars .card_container .card{
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    border: 0.5px solid rgba(134, 134, 134, 0.479);
+}
+
+.pillars .card_container .card img{
+    width: 62px;
+    margin-bottom: 25px;
+}
+
+.pillars .card_container .card h3{
+    font-size: 1.25rem;
+    color: #0E0E0E;
+    margin-bottom: 0.75rem;
+}
+
+.pillars .card_container .card p{
+    font-size: 1rem;
+    color: #464545d7;
+    margin-bottom: 0.75rem;
+}
+
+
+@media screen  and (max-width: 400px){
+
+    .pillars{
+        padding: 30px;
+    }
+
+    .pillars h2{
+    font-size: 1.7rem;
+    margin-bottom: 32px;
+}
+
+.pillars .card_container{
+    flex-direction: column;
+    gap: 24px;
+    
+}
+    
+}
