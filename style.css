@@ -1,49 +1,49 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     font-family: "Fira Sans", sans-serif;
     background-color: #F5F5F5;
-    
+
 }
 
-.container{
+.container {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
-   padding-top: 31px;
-   padding-bottom: 31px;
+    padding-top: 31px;
+    padding-bottom: 31px;
 }
 
-nav h1 a{
+nav h1 a {
     font-size: 2rem;
     color: #0E0E0E;
     font-weight: bold;
 }
 
-button{
+button {
     font-size: 1.12rem;
     border: none;
     background-color: transparent;
-    
+
 }
 
-.btn{
+.btn {
     color: #006A50;
     font-weight: 600;
     border: 1px solid #006A50;
@@ -51,37 +51,37 @@ button{
     border-radius: 8px;
 }
 
-@media screen  and (max-width: 400px){
-    nav{
+@media screen and (max-width: 400px) {
+    nav {
         padding: 20px;
     }
 
-    nav h1 a{
-    font-size: 1.5rem;
-    
-}
+    nav h1 a {
+        font-size: 1.5rem;
 
-nav button{
-    font-size: 0.8rem;
-    
-    
-}
+    }
 
-.btn{
-   
-    font-weight: 600;
-    
-    padding: 8px 18px;
-    
-}
-    
+    nav button {
+        font-size: 0.8rem;
+
+
+    }
+
+    .btn {
+
+        font-weight: 600;
+
+        padding: 8px 18px;
+
+    }
+
 }
 
 
 
 /* Main section */
 
-main{
+main {
     background-color: #C6E4D6;
     display: flex;
     align-items: center;
@@ -92,24 +92,24 @@ main{
     margin-bottom: 80px;
 }
 
-main .right_main img{
-    
+main .right_main img {
+
     width: 470px;
-    
+
 }
 
-main .left_main p{
+main .left_main p {
     font-size: 1.5rem;
     color: #0E0E0E;
     margin-bottom: 16px;
 }
 
-main .left_main h2{
+main .left_main h2 {
     font-size: 3.5rem;
     color: #0E0E0E;
 }
 
-.green_button{
+.green_button {
     font-size: 1.12rem;
     color: #fff;
     font-weight: 600;
@@ -117,95 +117,304 @@ main .left_main h2{
     padding: 17px 34px;
     display: inline-block;
     border-radius: 8px;
-    
+
 }
 
-main .left_main button a{
+main .left_main button a {
     margin-top: 24px;
 }
 
-@media screen and (max-width: 400px) {
-    main{
+@media screen and (max-width: 500px) {
+    main {
         padding: 30px;
         flex-direction: column;
         border-radius: 0;
         margin-bottom: 40px;
     }
 
-    main .left_main p{
+    main .left_main p {
         font-size: .9rem;
     }
 
-    main .left_main h2{
+    main .left_main h2 {
         font-size: 1.8rem;
     }
 
-    .green_button{
+    .green_button {
         font-size: 1rem;
         padding: 10px 16px;
     }
 
-    main .right_main img{
-    
-    width: 100%;
-    
-}
-    
+    main .right_main img {
+
+        width: 100%;
+
+    }
+
 }
 
 
 /* Pillars of bangladesh section */
+.pillars {
+    margin-bottom: 80px;
+}
 
-.pillars h2{
+.pillars h2 {
     font-size: 2.5rem;
     font-weight: bold;
     color: #0E0E0E;
     margin-bottom: 32px;
 }
-.pillars .card_container{
+
+.pillars .card_container {
     display: flex;
     gap: 24px;
+    
 }
-.pillars .card_container .card{
+
+.pillars .card_container .card {
     background-color: #fff;
     padding: 24px;
     border-radius: 16px;
     border: 0.5px solid rgba(134, 134, 134, 0.479);
 }
 
-.pillars .card_container .card img{
+.pillars .card_container .card img {
     width: 62px;
     margin-bottom: 25px;
 }
 
-.pillars .card_container .card h3{
+.pillars .card_container .card h3 {
     font-size: 1.25rem;
     color: #0E0E0E;
     margin-bottom: 0.75rem;
 }
 
-.pillars .card_container .card p{
+.pillars .card_container .card p {
     font-size: 1rem;
     color: #464545d7;
     margin-bottom: 0.75rem;
 }
 
 
-@media screen  and (max-width: 400px){
+@media screen and (max-width: 500px) {
 
-    .pillars{
+    .pillars {
+        margin: 0;
         padding: 30px;
+        padding-bottom: 40px;
     }
 
-    .pillars h2{
-    font-size: 1.7rem;
+    .pillars h2 {
+        font-size: 1.7rem;
+        margin-bottom: 32px;
+    }
+
+    .pillars .card_container {
+        flex-direction: column;
+        gap: 24px;
+
+    }
+
+}
+
+.future h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0E0E0E;
     margin-bottom: 32px;
 }
 
-.pillars .card_container{
+.future p{
+    font-size: 1rem;
+    color: #464545d7;
+    
+}
+
+.future .card_container {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    
+}
+
+.future .card_container .card {
+    display: flex;
     flex-direction: column;
     gap: 24px;
+    align-items: start;
+    padding: 24px;
+    border-radius: 16px;
+    border: 0.5px solid rgba(134, 134, 134, 0.479);
+}
+
+.future .card_container .card:nth-child(1){
+    
+    background-color: #548ff53b;
+}
+.future .card_container .card:nth-child(2){
+    
+    background-color: #C6E4D6;
+}
+.future .card_container .card:nth-child(3){
+    
+    background-color: #F7EBCF;
+}
+
+.future .card_container .card:nth-child(1) .green_button{
+    
+    background-color: #5490F5;
+}
+.future .card_container .card:nth-child(2) .green_button{
+    
+    background-color: #09A15C;
+}
+.future .card_container .card:nth-child(3) .green_button{
+    
+    background-color: #FFC239;
+}
+
+@media screen and (max-width: 500px){
+
+    .future{
+        padding: 30px;
+    }
+
+    .future h2 {
+    font-size: 2rem;
+    
+    margin-bottom: 24px;
+}
+
+.future .card_container {
+    
+    margin-top: 16px;
+    flex-direction: column;
+    
+}
+}
+
+.quote{
+    background-color: #fff;
+    border: 0.5px solid rgba(134, 134, 134, 0.479);
+    border-radius: 16px;
+    margin-top: 32px;
+    padding: 48px 24px;
+    position: relative;
+    
+    color: #0E0E0E;
+    margin-bottom: 80px;
+    
+}
+
+.quote .paragraph_container{
+   margin-top: -30px;
+    
+    
+}
+
+.quote  img{
+    width: 60px;
+    
+}
+
+.quote .paragraph_container p:first-child{
+    margin-bottom: 12px;
+    
+}
+
+.quote .paragraph_container p:nth-child(2){
+    color: #0e0e0edf;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+
+@media screen and (max-width: 500px){
+.quote{
+    
+    margin-bottom: 40px;
     
 }
     
+}
+
+
+
+/* opinion section */
+
+.opinion h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0E0E0E;
+    margin-bottom: 32px;
+    
+}
+
+.opinion table{
+    background-color: #fff;
+    padding: 32px;
+     border-spacing: 0;
+     border-radius: 16px;
+     width: 100%;
+     margin-bottom: 80px;
+     color: #0E0E0E;
+
+}
+
+.opinion table tr th{
+    color: #0E0E0E;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    padding: 24px;
+    border: 0.5px solid rgba(134, 134, 134, 0.479);
+    background-color: #C6E4D6;
+   
+}
+
+.opinion table tr td{
+     padding: 24px;
+     border: 0.5px solid rgba(134, 134, 134, 0.479);
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+
+.opinion table tr td select{
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    
+}
+
+@media screen and (max-width: 500px){
+
+    .opinion{
+       padding: 0 30px 0 30px;
+        width: 100%;
+    }
+.opinion h2{
+    font-size: 2rem;
+    
+    margin-bottom: 24px;
+    
+}
+
+.opinion table{
+    
+    padding: 0px;
+    
+     width: 100%;
+     margin-bottom: 80px;
+
+}
+
+
+   
 }
